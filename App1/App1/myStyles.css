@@ -1,0 +1,34 @@
+﻿^contentpage {
+    background-color: black;
+}
+
+#header {
+    font-size: 40;
+    text-emphasis-color: white;
+}
+
+#entry {
+    background-color: black;
+    border-radius: initial 10;
+    color: white;
+}
+
+
+#button {
+    margin-top: 30;
+    background-color: red;
+}
+
+#else {
+    font-size: 14;
+    background-color: wheat;
+    color: black;
+}
+
+label {
+    text-emphasis-color: wheat;
+}
+
+.LabelTextColor {
+    color: black;
+}

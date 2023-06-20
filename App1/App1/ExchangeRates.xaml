@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page2"
+             Title="Курсы валют">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="myStyles.css"/>
+    </ContentPage.Resources>
+    
+
+        <StackLayout Orientation="Vertical">
+
+            <StackLayout Orientation="Horizontal">
+
+
+                <StackLayout Orientation="Vertical">
+
+                <Label StyleId="label" Text="Центробанк РФ:" Margin="10,40,0,0" FontSize="20" TextColor="White"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label StyleId="label" Text="USD" FontSize="Large" Margin="10,20,0,10" FontAttributes="Bold" TextDecorations="Underline" TextColor="White"/>
+                        <Entry StyleId="entry" x:Name="usdEntry" Placeholder="Введите курс доллара" TextChanged="usdEntry_TextChanged"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Label StyleId="label" Text="EUR" FontSize="Large" Margin="10,20,0,10" FontAttributes="Bold" TextDecorations="Underline" TextColor="White"/>
+                        <Label StyleId="label" x:Name="eurLabel" Text="" TextDecorations="Underline" FontSize="Large" Margin="10, 20, 0,10" TextColor="White"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical" Margin="20">
+                    <Label StyleId="label" Text="Текущая дата" FontAttributes="Bold" TextDecorations="Underline" FontSize="20" Margin="10,10,0,0" TextColor="White"/>
+                    <DatePicker FontAttributes="Bold"/>
+                </StackLayout>
+
+            </StackLayout>
+
+        </StackLayout>
+
+</ContentPage>
